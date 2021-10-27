@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Events</title>
+</head>
+
+<body>
+
+    <div> This is a div...
+        <p> This is a paragraph...
+            <a href="#">This is a link...</a>
+        </p>
+    </div>
+
+    <script>
+
+        function showTagName() {
+            alert("You clicked on: " + this.tagName);
+        }
+
+        let div = document.querySelector("div");
+        div.addEventListener("click", showTagName);
+
+        let p = document.querySelector("p");
+        p.addEventListener("click", showTagName);
+
+        let a = document.querySelector("a");
+        a.addEventListener("click", showTagName);
+
+    </script>
+
+</body>
+
+</html>
